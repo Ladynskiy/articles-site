@@ -1,0 +1,87 @@
+.userPhoto {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dateAdd {
+    font-size: 12px;
+    color: #8F8F8F;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.wrapper {
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.postImg {
+    width:100%;
+    object-fit:cover;
+
+}
+
+.BtnFav {
+ margin-top: 1px;
+}
+
+.btnFavActive {
+    fill: blue;    
+   
+}
+
+.spin {
+  height: 50vw;
+}
+  
+.spinner {
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+  
+  & .path {
+    stroke: hsl(210, 70, 75);
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+  
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}

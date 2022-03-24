@@ -1,0 +1,66 @@
+.header {
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100px;
+    ul {
+        padding: 0;
+
+        li {
+            color:#8F8F8F;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover {
+                color: rgb(49, 48, 48);
+              
+            }
+            }
+    }
+
+
+    input {
+        
+        border: none;
+        width: 99%;
+        background-color: transparent;
+        outline: none;
+
+        &:focus{
+            border: none;
+        }
+
+        &:hover {
+            border: none;
+        }
+
+        
+    }
+    
+    .search {
+        background-color: #ECECEC;
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+    .btnWrite {
+        border: none;
+        width: 105px;
+        height: 34px;
+        background: #067AFF;
+        border-radius: 15px;
+        color: #fff;
+        margin-right: 15px;
+
+    }
+
+    .profile {
+        border: none;
+        height: 34px;
+        background: #DBDBDB;
+        border-radius: 10px;
+        color: #fff;
+        
+    }
+}
+
+
